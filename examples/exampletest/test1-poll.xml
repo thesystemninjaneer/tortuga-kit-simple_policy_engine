@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<rule applicationName="test1" name="test1-poll">
+    <applicationMonitor type="poll" pollPeriod="60">
+        <actionCommand>/root/tortuga/docker/tortuga-kit-simple_policy_engine/examples/exampletest/generate.sh &amp;&amp; post-application-data --app-name=test1 --data-file=/root/tortuga/docker/tortuga-kit-simple_policy_engine/examples/exampletest/sample-data.xml</actionCommand>
+        <description>Sample data monitor</description>
+    </applicationMonitor>
+    <description>Post sample data to Simple Policy Engine</description>
+</rule>
